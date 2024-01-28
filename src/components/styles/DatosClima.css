@@ -1,0 +1,186 @@
+
+.container-weather {
+    margin: 20px;
+    /* background-color: rgba(48, 70, 61, 0.5 ); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 20px,
+                0px 0px 20px,
+                0px 0px 20px,
+                0px 0px 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.form {
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px 16px;
+}
+
+.form button {
+    padding: 4px 16px;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.form button:hover {
+    color: bisque;
+    background-color: black;
+    transition: ease-in-out .3s;
+    transform: scale(1.1);
+}
+
+.form button:active {
+    background-color: bisque;
+    color: black;
+}
+
+.city {
+    font-size: 1.25rem;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px
+}
+
+.container-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding: 0px;
+}
+
+
+.fig {
+    padding: 0;
+    margin: 0;
+}
+
+.img {
+    width: 100px;
+    background-color: rgb(10, 195, 251);
+    padding: 0;
+    margin-right: 10px;
+   
+}
+
+.clouds {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.info { 
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    margin: 5px 0;
+    text-align: left;
+    justify-content: center;
+}
+
+.info li span:last-child {
+    font-weight: 700;
+}
+
+.btn {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    color: bisque;
+    background-color: black;
+    transition: ease-in-out .3s;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: bisque;
+    color: black;
+}
+
+@media (width >= 850px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-weather {
+        width: 700px;
+        font-size: 1.4rem;
+    }
+
+    .container-info {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .form {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .form input {
+        text-align: center;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        width: 250px;
+    }
+    
+    .form button {
+        padding: 5px 16px;
+        border-radius: 20px;
+        font-size: 1.4rem;
+    }
+
+    .img {
+        width: 150px;
+        background-color: rgb(10, 195, 251);
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+
+    
+}
+
+

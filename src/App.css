@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+
+*,
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'PT Serif', serif;
+}
+
+body { 
+  background: repeating-conic-gradient(from 45deg at 10% 50%, rgb(1, 44, 54) 0deg 10deg, rgb(58, 52, 34) 10deg 20deg, rgb(54, 53, 53) 20deg 30deg);
+  color: bisque;
+} 
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  object-fit: contain;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
