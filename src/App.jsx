@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     if (coords) {
-      
+
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${APIkey}`
       axios.get(url)
         .then(res => {
@@ -64,7 +64,8 @@ function App() {
         })
         .catch(err => {
           sethasError(true)
-          console.log(err)})
+          console.log(err)
+        })
     }
   }, [textInput]);
   console.log(finder)
@@ -81,7 +82,9 @@ function App() {
     <div className='app'>
       {
         isLoading ?
-          <h2>Loading</h2>
+          <div><h2 className='loader'>|O|</h2>
+          </div>
+
           :
           textInput ?
             <DatosClima

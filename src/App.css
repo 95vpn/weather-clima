@@ -17,6 +17,7 @@ html {
 body { 
   background: repeating-conic-gradient(from 45deg at 10% 50%, rgb(1, 44, 54) 0deg 10deg, rgb(58, 52, 34) 10deg 20deg, rgb(54, 53, 53) 20deg 30deg);
   color: bisque;
+
 } 
 
 img {
@@ -45,5 +46,26 @@ ul {
   flex-direction: column;
   text-align: center;
 }
+
+.loader {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
 
 
